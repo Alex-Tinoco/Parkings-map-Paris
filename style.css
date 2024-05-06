@@ -1,0 +1,149 @@
+:root {
+    --main-color:#9C2BCB;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+
+.leaflet-container {
+    font-family: 'Kanit', sans-serif;
+}
+
+.leaflet-container a {
+    text-decoration: none;
+}
+
+#map {
+    height: 700px;
+    z-index: 0;
+    margin: 50px 50px 0;
+}
+
+.leaflet-popup-content {
+    line-height: 20px;
+    color: white;
+    margin: 0 0 0;
+    padding : 5px 8px 5px;
+    border-radius: 2px ;
+    border: none;
+    width: 301px;
+}
+
+.infos {
+    width: 100%;
+}
+
+.infos > .nomparking {
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:inline-block;
+}
+
+.infos > .adresse {
+    color: rgb(117, 117, 117);
+    font-size: 13px;
+    max-width: 95%;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:inline-block;
+}
+
+.bas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.liens {
+    width: 100%;
+    display: inline-flex;
+    padding-top: 8px;
+}
+
+.liens * {
+    padding: 0 2px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.liens img {
+    height: 25px;
+}
+
+.liens button {
+    width: 100%;
+    display: flex;
+    padding: 5px 15px 5px;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.liens button span {
+    color: white;
+    padding-left: 8px;
+    font-size: 10px;
+}
+
+.liens #plus {
+    padding: 5px 5px 5px;
+    width: 35px;
+}
+
+.res {
+    display: block;
+    padding-top: 8px;
+}
+
+.res button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px 5px;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    border: none;
+    color: white
+}
+
+.res button span {
+    color: white;
+    padding-left: 8px;
+    font-size: 10px;
+}
+
+#btnresmot {
+    margin-top: 5px;
+}
+
+/* Modals */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+    float: right;
+  }
